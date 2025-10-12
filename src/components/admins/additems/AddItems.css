@@ -1,0 +1,117 @@
+
+.additems-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f6f7fb 0%, #e3e6f3 100%);
+  padding: 2rem;
+}
+
+
+.additems-form {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 24px rgba(42,42,114,0.10);
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+}
+
+.additems-title {
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2a2a72;
+  letter-spacing: 0.03em;
+}
+
+.additems-field {
+  margin-bottom: 0;
+}
+
+.additems-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2a2a72;
+  letter-spacing: 0.01em;
+}
+
+.additems-field input,
+.additems-field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  outline: none;
+  background: #f7fafc;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.additems-field input:focus,
+.additems-field textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px #bae6fd;
+}
+
+.additems-field textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.additems-button {
+  grid-column: 1 / -1;
+  width: 100%;
+  background: linear-gradient(90deg, #2a2a72 60%, #60a5fa 100%);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(42,42,114,0.08);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  margin-top: 0.5rem;
+}
+
+.additems-button:hover {
+  background: linear-gradient(90deg, #60a5fa 0%, #2a2a72 100%);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.additems-button:active {
+  transform: scale(0.98);
+}
+
+.additems-message {
+  grid-column: 1 / -1;
+  margin-top: 1.25rem;
+  text-align: center;
+  color: #f6c700;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .additems-form {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 0.5rem;
+    border-radius: 0.75rem;
+    gap: 1rem;
+  }
+  .additems-title {
+    font-size: 1.5rem;
+  }
+}

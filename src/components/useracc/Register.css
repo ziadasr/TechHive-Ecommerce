@@ -1,0 +1,129 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+  padding: 1rem;
+}
+
+.register-form {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+}
+
+.register-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.9rem;
+  text-align: center;
+  color: #2a2a72;
+  letter-spacing: 0.05em;
+}
+
+.register-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 0;
+  color: #111;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.register-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2a2a72;
+}
+
+.register-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 1rem;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: box-shadow 0.3s;
+}
+
+.register-input:focus {
+  box-shadow: 0 0 0 4px #60a5fa;
+}
+
+.register-button {
+  width: 100%;
+  background: #2a2a72;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background: #60a5fa;
+}
+
+.register-button:active {
+  transform: scale(0.97);
+}
+
+.register-message {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #f6c700;
+  font-weight: 600;
+}
+
+.register-link {
+  margin-top: 1rem;
+  text-align: center;
+  color: #2a2a72;
+  font-size: 0.875rem;
+}
+
+.register-link a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.form-columns {
+  display: flex;
+  gap: 2rem;  
+  flex-wrap: wrap;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+
+.register-error.error {
+  margin-bottom: 1.5rem;
+  color: #e53e3e;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.register-error.success {
+  color: #38a169;
+  background: #f0fff4;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}

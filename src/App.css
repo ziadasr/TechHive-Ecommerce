@@ -1,0 +1,244 @@
+/*
+ * // new styles for redesigned UI: Refactored Global CSS to match modern, minimal design
+ *
+ * NOTE: Removed invalid Tailwind directives/classes and consolidated styles.
+ *
+ */
+
+:root {
+  /* --mainBlue: #2a2a72; (Original) */
+  --mainBlue: #007aff;       /* New Primary Accent Blue */
+  --lightBlue: #3b82f6;      /* Lighter blue for subtle highlights */
+  --mainWhite: #ffffff;      /* Pure white for cards/header */
+  --mainDark: #333333;       /* Dark charcoal for main text */
+  --mainYellow: #facc15;     /* Keeping for alerts/accents */
+  --lightGrayBg: #f7f7f7;     /* Page background color */
+  --cardBorder: #e0e0e0;      /* Subtle border for cards/filters */
+  --successGreen: #145a32;    /* Dark green for 'In Stock' text */
+  --successLightBg: #e8f8f5;  /* Light green for 'In Stock' badge background */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Background Colors                                */
+/* -------------------------------------------------------------------------- */
+
+.bg-slate-900 {
+  /* Dark theme background */
+  background-color: #1f2937;
+}
+
+/* // new styles for redesigned UI: Updated light page background color */
+.bg-slate-200 { 
+  background-color: var(--lightGrayBg); 
+}
+
+/* // new styles for redesigned UI: Updated navbar background color (White) */
+.bg-slate-800 {
+  background-color: var(--mainWhite); 
+}
+
+.submit-order-btn:hover {
+  /* Keeping existing hover logic for cart/order button */
+  background-color: #218a15 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(41, 181, 25, 0.2);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.themes {
+  font-size: x-large;
+}
+.cardbg {
+  background-color: #2d3748;
+}
+.paddinglr {
+  width: 100%;
+}
+.h-full {
+  height: 100vh;
+}
+.h-fit {
+  height: fit-content;
+}
+.hover:hover {
+  color: var(--mainBlue); /* Changed from old lightBlue to new mainBlue */
+}
+.menubar {
+  border: #979393 1px solid;
+  padding-left: 3px; 
+  padding-right: 3px;
+  border-radius: 6px;
+  font-size: x-large;
+}
+
+.resmenu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.mainmenu {
+  margin-left: 20px;
+}
+body {
+  /* // new styles for redesigned UI: Changed font to a cleaner sans-serif for modern look */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--mainDark) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Typography                                  */
+/* -------------------------------------------------------------------------- */
+
+.text-title {
+  /* // new styles for redesigned UI: Removed 'Anton' font; used global sans-serif for clean title */
+  font-family: inherit;
+  letter-spacing: 2px;
+  text-transform: uppercase; 
+  font-weight: 700;
+}
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: var(--mainDark);
+  border-radius: 0;
+  border: 0.1rem solid var(--mainDark);
+}
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+.page-title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Title component (OUR PRODUCTS) styling */
+.title {
+  /* Styles for Title component wrapper class */
+  font-size: 2rem; 
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title-light {
+  color: var(--mainWhite);
+}
+
+.title-dark {
+  color: var(--mainDark);
+}
+
+/* Divider removed to match minimal mockup, but keeping the class for stability */
+.title-divider {
+  margin: 0.75rem auto 0;
+  width: 0; /* Minimized width */
+  height: 0; /* Minimized height */
+  background-color: transparent; 
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*=========================*/
+
+/* -------------------------------------------------------------------------- */
+/*                         Layout and Product List Classes                         */
+/* -------------------------------------------------------------------------- */
+
+.container-left-shift {
+  padding-left: 0 !important;
+}
+
+.col-lg-10 {
+  /* Keeping old style but note this can conflict with new flex layout */
+  padding-left: 0 !important; 
+}
+
+.filter-box {
+  /* Not directly used in the current React components, but kept for context */
+  position: fixed;
+  top: 20px; 
+  left: 20px;
+  width: 250px; 
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           PAGINATION FIX (Error Resolution)                           */
+/* -------------------------------------------------------------------------- */
+
+/* // new styles for redesigned UI: Pagination button hover/active styles */
+
+.pagination-circle-btn {
+  transition: all 0.2s ease;
+  /* Ensures the button looks circular and centered */
+  border-radius: 50% !important; 
+  font-weight: 600 !important;
+  width: 38px !important;
+  height: 38px !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.pagination-circle-btn.active {
+  background: var(--mainBlue) !important;
+  color: var(--mainWhite) !important;
+  border-color: var(--mainBlue) !important;
+}
+
+.pagination-circle-btn:not(.active) {
+  background: transparent !important;
+  color: #444 !important; /* Inactive text color */
+  border-color: var(--cardBorder) !important; /* Subtle gray border */
+}
+
+.pagination-circle-btn:not(.active):hover {
+  background: #f0f0f0 !important;
+  color: var(--mainBlue) !important;
+  border-color: var(--mainBlue) !important;
+}
+
+/* Dark Theme specific hover/inactive states */
+.bg-slate-900 .pagination-circle-btn:not(.active) {
+  border-color: #555 !important;
+  color: var(--mainWhite) !important;
+}
+
+.bg-slate-900 .pagination-circle-btn:not(.active):hover {
+  background: #444 !important;
+  color: var(--mainWhite) !important;
+  border-color: #444 !important;
+}

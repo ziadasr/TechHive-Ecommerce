@@ -1,0 +1,107 @@
+.verify-container {
+  min-height: calc(100vh - 64px); /* match login/register, adjust for navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee; /* match login/register background */
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.verify-form {
+  background: #fff;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(52, 199, 89, 0.1);
+  max-width: 380px;
+  width: 100%;
+  border: 1px solid #e6f9ec;
+}
+
+.verify-title {
+  font-size: 1.7rem;
+  font-weight: 650;
+  margin-bottom: 0.7rem; /* reduced space below title */
+  text-align: center;
+  color: #2a2a72;
+  letter-spacing: 0.05em;
+}
+
+.verify-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #111;
+  margin-top: 0;
+  margin-bottom: 1.2rem; /* less space below subtitle */
+  font-weight: 600;
+}
+
+.verify-label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.95rem;
+}
+
+.verify-input,
+.verify-input-email {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.6rem;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+.verify-input:focus,
+.verify-input-email:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.verify-button {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.65rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(52, 199, 89, 0.1);
+  transition: background 0.2s, transform 0.15s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.verify-button:hover {
+  background: #1e40af;
+}
+
+.verify-button:active {
+  transform: scale(0.97);
+}
+.verify-message {
+  margin-bottom: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0.4rem 0;
+}
+
+/* Success message: green */
+.verify-message.success {
+  color: #38a169;
+}
+
+/* Error message: red */
+.verify-message.error {
+  color: #e53e3e;
+}

@@ -1,0 +1,115 @@
+/* Subtitle under main title */
+.login-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #111;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+/* Login.css - custom styles for Login component */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e8f0; /* slate-200 */
+  padding: 1rem;
+}
+
+.login-forgot {
+  margin-top: 1.2rem;
+  text-align: left;           
+  color: #000000;
+  font-size: 0.85rem;         /* Smaller font */
+  font-weight: 500;
+  padding-left: 190px;          /* Slight indent if needed */
+}
+
+.login-forgot a {
+  text-decoration: underline;
+  color: inherit;
+  font-size: 0.85rem;         /* Match smaller size */
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2a2a72; /* mainBlue */
+  letter-spacing: 0.05em;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2a2a72;
+}
+
+.login-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 1rem;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: box-shadow 0.3s;
+}
+
+.login-input:focus {
+  box-shadow: 0 0 0 4px #60a5fa; /* lightBlue */
+}
+
+.login-button {
+  width: 100%;
+  background: #2a2a72;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #60a5fa;
+}
+
+.login-button:active {
+  transform: scale(0.97);
+}
+
+.login-message {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #f6c700; /* mainYellow */
+  font-weight: 600;
+}
+
+.login-forgot {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #2a2a72;
+  font-size: 0.875rem;
+}
+
+.login-forgot a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.form-columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap; 
+}
+
+.form-column {
+  flex: 1; 
+  min-width: 300px;
+}

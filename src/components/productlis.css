@@ -1,0 +1,67 @@
+/* ===========================
+   ProductList Scoped Styles
+=========================== */
+
+.product-list-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Sidebar Filter Box */
+.filter-sidebar {
+  width: 220px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+}
+
+.filter-sidebar h5 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.filter-sidebar label {
+  display: block;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.filter-sidebar input {
+  margin-right: 0.4rem;
+}
+
+/* Product Grid */
+.product-list-content {
+  flex: 1;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .product-list-container {
+    flex-direction: column;
+  }
+
+  .filter-sidebar {
+    width: 100%;
+    position: static;
+  }
+}

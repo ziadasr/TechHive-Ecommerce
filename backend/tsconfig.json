@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2020", // Modern JS features
+    "module": "commonjs", // Node module system
+    "rootDir": "./src", // Your TS source files
+    "outDir": "./dist", // Compiled JS goes here
+    "strict": true, // Enable type checking
+    "esModuleInterop": true, // Allow default imports from CommonJS
+    "skipLibCheck": true, // Skip checking node_modules types
+    "types": [
+      "node"
+    ] // Node.js typings
+  }
+}

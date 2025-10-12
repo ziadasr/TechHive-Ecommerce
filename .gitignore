@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# environment
+.env
+.env.*
+!env.example
+
+# Backend env file
+backend/.env
+
+
+# build output
+client/build/
+client/dist/
+server/dist/
+server/build/
+
+# misc
+.DS_Store
+coverage/
+logs/
+*.log
+
+# IDE settings
+.vscode/
+.idea/
