@@ -70,8 +70,7 @@ You must have the following installed locally:
     ```bash
     cd backend
     npm install
-    # Assuming you have a script for migrations and seeding
-    npm run migrate:up
+
     ```
 
 3.  **Environment Variables**
